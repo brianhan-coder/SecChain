@@ -1,0 +1,23 @@
+.el-button--primary {
+  background-color: #2290bf;
+  background-image: url("/static/images/pic_btn_texture.png");
+  background-size: cover;
+}
+
+@keyframes mymove {
+  from {
+    transform: translateY(-5px);
+  }
+  to {
+    transform: translateY(5px);
+  }
+}
+.exp-tips {
+  animation: mymove 1s infinite;
+  &.el-tooltip__popper {
+    background: #e45a5a;
+  }
+  .popper__arrow::after {
+    border-top-color: #e45a5a !important;
+  }
+}
